@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Webpage</title>
+
+<style>
+
+/* Font */
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f2f2f2;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Multi-column content */
+.content {
+  column-count: 3;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+/* Cards */
+.box {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px gray;
+
+  /* Animation */
+  animation: fade 2s;
+  transition: 0.3s;
+}
+
+/* Hover transform */
+.box:hover {
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .content {
+    column-count: 1;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>My Responsive Webpage</h1>
+  <p>Om nipane CS25158</p>
+</header>
+
+<div class="content">
+
+  <div class="box">
+    <h3>⭐ Design</h3>
+    <p>This page uses multi-column layout.</p>
+  </div>
+
+  <div class="box">
+    <h3>🎨 Style</h3>
+    <p>Custom styling improves look.</p>
+  </div>
+
+  <div class="box">
+    <h3>⚡ Transform</h3>
+    <p>Hover effect uses scaling.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
