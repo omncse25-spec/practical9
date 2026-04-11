@@ -1,91 +1,141 @@
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
-<title>Responsive Webpage</title>
+    <title>My Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-/* Font */
-body {
-  font-family: Arial;
-  margin: 0;
-  background: wheat;
-}
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-/* Header */
-header {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
+    <style>
+        body {
+            font-family: Roboto;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
 
-/* Multi-column content */
-.content {
-  column-count: 3;
-  column-gap: 20px;
-  padding: 20px;
-}
+        header {
+            background: teal;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
 
-/* Cards */
-.box {
-  background: white;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 8px gray;
+        nav {
+            background: #333;
+            text-align: center;
+        }
 
-  /* Animation */
-  animation: fade 2s;
-  transition: 0.3s;
-}
+        nav a {
+            color: white;
+            padding: 10px;
+            display: inline-block;
+            text-decoration: none;
+        }
 
-/* Hover transform */
-.box:hover {
-  transform: scale(1.05);
-}
+        nav a:hover {
+            background: gray;
+        }
 
-/* Animation */
-@keyframes fade {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
+        .content {
+            column-count: 3;
+            padding: 15px;
+        }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
-  .content {
-    column-count: 1;
-  }
-}
+        .box {
+            background: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            display: inline-block;
+            width: 100%;
+            transition: 0.3s;
+        }
 
-</style>
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        i {
+            color: teal;
+            font-size: 25px;
+        }
+
+        @keyframes show {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        .box {
+            animation: show 1s;
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        @media (max-width: 800px) {
+            .content {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .content {
+                column-count: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-  <h1>My Responsive Webpage</h1>
-  <p>Om nipane CS25158</p>
+    <h2>My Website</h2>
+<h2>OM NIPANE CS25158</h2>
 </header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
 
 <div class="content">
 
-  <div class="box">
-    <h3>⭐ Design</h3>
-    <p>This page uses multi-column layout.</p>
-  </div>
+    <div class="box">
+        <i class="fas fa-laptop"></i>
+        <h3>Tech</h3>
+        <p>This is a simple webpage using CSS3 features.</p>
+    </div>
 
-  <div class="box">
-    <h3>🎨 Style</h3>
-    <p>Custom styling improves look.</p>
-  </div>
+    <div class="box">
+        <i class="fas fa-mobile"></i>
+        <h3>Responsive</h3>
+        <p>It adjusts based on screen size.</p>
+    </div>
 
-  <div class="box">
-    <h3>⚡ Transform</h3>
-    <p>Hover effect uses scaling.</p>
-  </div>
+    <div class="box">
+        <i class="fas fa-star"></i>
+        <h3>Design</h3>
+        <p>Includes animation and hover effects.</p>
+    </div>
 
 </div>
+
+<footer>
+    <p>My Website 2026</p>
+</footer>
 
 </body>
 </html>
